@@ -2,8 +2,10 @@
     display: flex;
     gap: 20px;
     /* position: absolute; */
-    left: 88px;
-    top: 656px;
+    /* left: 88px;
+    top: 656px; */
+    width: 85%;
+    margin: auto;
 }
 
 .button {

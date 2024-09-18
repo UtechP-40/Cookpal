@@ -5,6 +5,8 @@ footer {
   }
   
   .footer-container {
+    width: 85%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -19,6 +21,11 @@ footer {
   .company-section,
   .resources-section,
   .subscribe-section {
+    /* display: flex; */
+    margin-left: 4rem;
+    /* flex-direction: column-reverse; */
+    /* align-items: center; */
+    /* justify-content: center; */
     flex: 1;
     text-align: left;
   }
