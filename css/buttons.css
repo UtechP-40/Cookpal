@@ -1,0 +1,67 @@
+.button-container {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 88px;
+    top: 656px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 236.8px;
+    height: 86px;
+    border-radius: 10px;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Button background colors */
+#all-recipes {
+    background-color: #EAAA00;
+}
+
+#veg-recipes {
+    background-color: #C4D600;
+}
+
+#non-veg-recipes {
+    background-color: #DC582A;
+}
+
+/* Text styling */
+.button-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 127%;
+    color: #FFFFFF;
+}
+
+/* Chevron (placeholder circle icon) */
+.chevron {
+    width: 26px;
+    height: 26px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Align chevron properly */
+.button #all-recipes .chevron {
+    left: 75.6px;
+    top: 30px;
+}
+
+.button #veg-recipes .chevron {
+    left: 78.8px;
+    top: 30px;
+}
+
+.button #non-veg-recipes .chevron {
+    left: 83px;
+    top: 30px;
+}
+
