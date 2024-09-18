@@ -1,0 +1,71 @@
+footer {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+  
+  .logo-section {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .company-section,
+  .resources-section,
+  .subscribe-section {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .logo-section img,
+  .subscribe-section img {
+    width: 100px;
+  }
+  
+  .email-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .email-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+  }
+  
+  .email-container button {
+    background-color: #000; /* Black button for contrast */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .email-container button:hover {
+    background-color: #333; /* Darker black on hover */
+  }
+  
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media svg {
+    width: 25px;
+    height: 25px;
+    fill: #000; /* Black fill for icons */
+  }
+  

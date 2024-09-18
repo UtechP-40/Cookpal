@@ -1,7 +1,7 @@
 .button-container {
     display: flex;
     gap: 20px;
-    position: absolute;
+    /* position: absolute; */
     left: 88px;
     top: 656px;
 }
