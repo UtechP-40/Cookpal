@@ -100,7 +100,7 @@ let arr = [
         "imageSrc": "https://source.unsplash.com/random?caesarSalad",
         "time": "25 min",
         "type": "veg",
-        "isLiked": false,
+        "isLiked": true,
         "rating": 3.8
     },
     {
@@ -128,5 +128,20 @@ for(let obj of arr){
     let card1 = document.createElement("div")
     card1.className = "repp"
      card1.innerHTML = card.innerHTML
+     let img_cont = card1.querySelector(".image-container")
+     
+     img_cont.innerHTML = `<img
+              src=${obj.imageSrc}
+              alt=${obj.name}
+            />`
+            card1.querySelector(".category").innerText = obj.type
+
+    card1.querySelector(".recipe-title").innerText = obj.name
+    card1.querySelector(".rating-value").innerText = obj.rating;
+    card1.querySelector(".time").innerText = obj.time;
+    if(obj.isLiked===true){
+        card1.querySelector("#like").attributes.fill = "red";
+    }
+    
     cont.append(card1)
 }
