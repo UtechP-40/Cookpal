@@ -4,14 +4,15 @@
     display: flex;
 }
 
-.left{
-  /* width: 30vw; */
-}
+
 
 .right{
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 10%;
+  /* display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
 .filter-box {
@@ -72,14 +73,26 @@
   
 
   /* Container for the entire card */
-.recipe-card {
-    width: 300px;
+
+  .repp{
+    width: 350px;
     border: 1px solid #eee;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     background-color: #fff;
+    margin-bottom: 15px;
+  }
+.recipe-card {
+    width: 350px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: none;
   }
   
   /* Image Container */
