@@ -106,3 +106,8 @@ text-align: left;
     width: 20px;
     height: 20px;
 }
+
+
+.button{
+    cursor:pointer;
+}

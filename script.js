@@ -120,28 +120,80 @@ let arr = [
         "rating": 4.9
     }
 ];
-
-let cont = document.querySelector(".right")
-let card = document.querySelector(".recipe-card");
-
 for(let obj of arr){
-    let card1 = document.createElement("div")
-    card1.className = "repp"
-     card1.innerHTML = card.innerHTML
-     let img_cont = card1.querySelector(".image-container")
-     
-     img_cont.innerHTML = `<img
-              src=${obj.imageSrc}
-              alt=${obj.name}
-            />`
-            card1.querySelector(".category").innerText = obj.type
-
-    card1.querySelector(".recipe-title").innerText = obj.name
-    card1.querySelector(".rating-value").innerText = obj.rating;
-    card1.querySelector(".time").innerText = obj.time;
-    if(obj.isLiked===true){
-        card1.querySelector("#like").attributes.fill = "red";
-    }
-    
-    cont.append(card1)
+    obj.display = true;
 }
+//Function for set display
+let veg = document.querySelector("#veg-recipes")
+veg.addEventListener("click",()=>{
+console.log("veg")
+for(let obj of arr){
+    if(obj.type!=="veg"){
+    obj.display = false;
+    }else{
+        obj.display = false;
+    }
+    console.log(obj.display)
+}
+// c()
+})
+let non_veg = document.querySelector("#non-veg-recipes")
+non_veg.addEventListener("click",()=>{
+console.log("non-veg")
+for(let obj of arr){
+    if(obj.type!=="non-veg"){
+    obj.display = false;
+    }else{
+        obj.display = true;
+    }
+}
+// c()
+})
+let AllRecipes = document.querySelector("#all-recipes")
+AllRecipes.addEventListener("click",()=>{
+console.log("AllRecipes")
+for(let obj of arr){
+    // if(obj.type!=="veg"){
+    obj.display = true;
+    // }
+}
+// c()
+})
+
+
+
+
+
+
+function c(){
+    let cont = document.querySelector(".right")
+let card = document.querySelector(".recipe-card");
+    for(let obj of arr){
+        let card1 = document.createElement("div")
+        card1.className = "repp"
+         card1.innerHTML = card.innerHTML
+         let img_cont = card1.querySelector(".image-container")
+         
+         img_cont.innerHTML = `<img
+                  src=${obj.imageSrc}
+                  alt=${obj.name}
+                />`
+                card1.querySelector(".category").innerText = obj.type
+    
+        card1.querySelector(".recipe-title").innerText = obj.name
+        card1.querySelector(".rating-value").innerText = obj.rating;
+        card1.querySelector(".time").innerText = obj.time;
+        if(obj.isLiked===true){
+            card1.querySelector("#like").attributes.fill = "red";
+        }
+        cont.append(card1)
+        
+        console.log(obj.display)
+        if(obj.display==true){
+            card1.style.display = "block"
+        }else if(obj.display==false){
+            card1.style.display = "none";
+        }
+    }
+}
+c();
