@@ -175,7 +175,7 @@ let card = document.querySelector(".recipe-card");
          let img_cont = card1.querySelector(".image-container")
          
          img_cont.innerHTML = `<img
-                  src=${obj.imageSrc}
+                  src=https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg
                   alt=${obj.name}
                 />`
                 card1.querySelector(".category").innerText = obj.type
