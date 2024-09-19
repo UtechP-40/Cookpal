@@ -123,3 +123,9 @@ let arr = [
 
 let cont = document.querySelector(".right")
 let card = document.querySelector(".recipe-card");
+
+for(let obj of arr){
+    let card1 = document.createElement("div")
+     card1.innerHTML = card.innerHTML
+    cont.append(card1)
+}

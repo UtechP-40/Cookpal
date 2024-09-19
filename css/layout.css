@@ -4,7 +4,15 @@
     display: flex;
 }
 
+.left{
+  /* width: 30vw; */
+}
 
+.right{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .filter-box {
     font-family: Arial, sans-serif;
@@ -144,7 +152,14 @@
     justify-content: space-between;
     
   }
-  .action{
-    /* width: 40%; */
-    /* padding: 20034px; */
+
+  .svg{
+    /* padding: 1px; */
+    margin-right: 8px;
+  }
+
+  .rate{
+    padding-right: 8px;
+    display: flex;
+    justify-content: space-between;
   }
