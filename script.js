@@ -183,9 +183,21 @@ let card = document.querySelector(".recipe-card");
         card1.querySelector(".recipe-title").innerText = obj.name
         card1.querySelector(".rating-value").innerText = obj.rating;
         card1.querySelector(".time").innerText = obj.time;
-        if(obj.isLiked===true){
-            card1.querySelector("#like").attributes.fill = "red";
-        }
+        let like = card1.querySelector("#like");
+        like.addEventListener("click",()=>{
+            if(obj.isLiked==true){
+                obj.isLiked = false;
+            }else{
+                obj.isLiked = true;
+            }
+
+            if(obj.isLiked===true){
+                card1.querySelector("#like").setAttribute('fill', 'red');
+            }else{
+                card1.querySelector("#like").setAttribute('fill', 'none');
+            }
+        })
+        
         cont.append(card1)
         
         console.log(obj.display)
@@ -195,5 +207,5 @@ let card = document.querySelector(".recipe-card");
             card1.style.display = "none";
         }
     }
-}
+};
 c();

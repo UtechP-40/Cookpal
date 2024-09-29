@@ -47,10 +47,10 @@ nav ul li a.active {
 }
 
 .profile{
-    width: 20vw;
+    width: 250px;
     display: flex;
     justify-content: space-between;
 }
-nav{
+/* nav,header{
     width: 100vw;
-}
+} */
